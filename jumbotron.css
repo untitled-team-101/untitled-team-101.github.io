@@ -88,6 +88,7 @@ body {
     text-decoration:  none;
     color:  #FFFFFF;
     margin:  2%;
+    border: 2px solid transparent;
     padding:  2% 5%;
 }
 
