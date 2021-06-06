@@ -1,0 +1,100 @@
+body {
+    overflow:  hidden;
+}
+
+#jumbotron {
+    display:  flex;
+    justify-content:  center;
+    height:  100vh;
+    font-family:  Comic Sans Ms;
+}
+
+#back-video {
+    position:  fixed;
+    top: 0;
+    left: 0;
+    min-width:  100vw;
+    min-height:  100vh;
+    z-index:  -100;
+}
+
+#jumbotron-text {
+    color:  #FFFFFF;
+    text-align:  center;
+    margin:  auto;
+    padding:  2%;
+    padding-left:  5%;
+    padding-right:  5%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    font-size:  20px;
+    position:  fixed;
+    bottom:  30%;
+}
+
+#scroll {
+    color:  #FFFFFF;
+}
+
+#navbar {
+    position:  fixed;
+    padding:  2%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    width:  100%;
+    top:  0;
+    left:  0;
+}
+
+#navbar-content {
+    display:  flex;
+}
+
+#left-side {
+    flex:  50%;
+}
+
+#right-side {
+    flex:  40%;
+}
+
+#logo {
+    height:  50px;
+    width:  50px;
+    border:  2px solid #FFFFFF;
+    border-radius:  50px;
+}
+
+#logo-section {
+    display:  flex;
+}
+
+#image-left {
+    flex:  10%;
+}
+
+#text-right {
+    flex:  90%;
+    margin:  auto;
+    color:  #FFFFFF;
+}
+
+#right-side {
+    margin:  auto;
+    text-align:  right;
+    padding-right:  5%;
+
+}
+
+.nav-link {
+    text-decoration:  none;
+    color:  #FFFFFF;
+    margin:  2%;
+    padding:  2% 5%;
+}
+
+.nav-link:hover {
+    border:  2px solid #FFFFFF;
+    background:  #FFFFFF;
+    color:  #000000;
+    border-radius:  50px;
+    box-shadow:  0 0 20px #FFFFFF;
+}
