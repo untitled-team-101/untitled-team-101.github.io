@@ -1,21 +1,74 @@
-body {
-    overflow:  hidden;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+.video-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+#video {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    z-index: -1000;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    z-index: -1000;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
 #jumbotron {
     display:  flex;
     justify-content:  center;
-    height:  100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
     font-family:  Comic Sans Ms;
 }
+#logo-text{
+    font-size: 1.5em;
+    margin-left: 15px;
 
-#back-video {
-    position:  fixed;
-    top: 0;
-    left: 0;
-    min-width:  100vw;
-    min-height:  100vh;
-    z-index:  -100;
 }
 
 #jumbotron-text {
@@ -27,7 +80,6 @@ body {
     padding-right:  5%;
     background-color:  rgba(0, 0, 0, 0.5);
     font-size:  20px;
-    position:  fixed;
     bottom:  30%;
 }
 
@@ -37,11 +89,12 @@ body {
 
 #navbar {
     position:  fixed;
-    padding:  2%;
+    padding:  1%;
     background-color:  rgba(0, 0, 0, 0.5);
     width:  100%;
     top:  0;
     left:  0;
+    z-index: 100;
 }
 
 #navbar-content {
@@ -49,11 +102,13 @@ body {
 }
 
 #left-side {
-    flex:  50%;
+    flex:  30%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #right-side {
-    flex:  40%;
+    flex:  70%;
 }
 
 #logo {
@@ -67,12 +122,7 @@ body {
     display:  flex;
 }
 
-#image-left {
-    flex:  10%;
-}
-
 #text-right {
-    flex:  90%;
     margin:  auto;
     color:  #FFFFFF;
 }
@@ -81,15 +131,16 @@ body {
     margin:  auto;
     text-align:  right;
     padding-right:  5%;
+    justify-content: flex-end;
 
 }
 
 .nav-link {
     text-decoration:  none;
     color:  #FFFFFF;
-    margin:  2%;
+    margin:  0;
     border: 2px solid transparent;
-    padding:  2% 5%;
+    padding:  1% 2%;
 }
 
 .nav-link:hover {
