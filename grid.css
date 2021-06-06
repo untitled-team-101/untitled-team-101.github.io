@@ -1,18 +1,29 @@
 body{
     background-color: #336b89;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.grid-container-l {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 180px;
+
+a {
+    cursor: url('./images/cursor.svg'), pointer;
 }
-.grid-item-l {
-    padding: 20px;
+
+.grid .grid-title {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    margin-left: 5%;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
 .grid-item {
     display: flex;
     padding: 20px;
@@ -20,28 +31,90 @@ body{
     margin: 1fr;
 }
 
-
 .card {
-    /*margin: 0;*/
-    /*padding: 0;*/
     box-sizing: border-box;
     border: 8px solid white;
     width: 300px;
-    /* background-color: red; */
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.4);
+    transform: scale(1.01);
+    transition: all 0.2s;
 }
 
 .image {
     height: 240px;
-    background: url('tony stark.jfif') no-repeat center;
+    background: url('images/member.jpg') no-repeat center rgba(255, 255, 255, 0.3);
+    background-size: 80% 100%;
     backdrop-filter: blur(2px);
 }
 
-.name {
-    height: 67px;
+.details {
+    /*height: 67px;*/
     width: 284px;
     background-color: white;
-    padding-top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
+    padding-top: 10px;
+    font-size: large;
     font-weight: bold;
     text-align: center;
+    color: #0D6A8A;
+}
+
+.details .bio {
+    font-size: 60%;
+    height: 50px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #0D6A8A;
+    color: #0D6A8A;
+}
+
+.details .portfolio {
+    border: 2px solid;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.details .portfolio a {
+    padding: 10px;
+    line-height: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.details .social-links {
+    display: inline-block;
+    min-width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-spacing: 10px;
+}
+
+.details .social-links .social {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+.social.github {
+    background: url('./images/github.svg');
+}
+
+.social.linkedin {
+    background: url('./images/linkedin.svg');
+}
+
+/* TODO: Add other social media svg and classes when required*/
+
+
+/*removed scrollbar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*TODO: Add custom scroll-bar*/
