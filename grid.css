@@ -1,0 +1,47 @@
+body{
+    background-color: #336b89;
+}
+.grid-container-l {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 180px;
+}
+.grid-item-l {
+    padding: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin: 1fr;
+}
+
+
+.card {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    box-sizing: border-box;
+    border: 8px solid white;
+    width: 300px;
+    /* background-color: red; */
+}
+
+.image {
+    height: 240px;
+    background: url('tony stark.jfif') no-repeat center;
+    backdrop-filter: blur(2px);
+}
+
+.name {
+    height: 67px;
+    width: 284px;
+    background-color: white;
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
