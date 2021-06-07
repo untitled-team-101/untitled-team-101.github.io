@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .video-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
