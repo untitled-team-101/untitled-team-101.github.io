@@ -1,0 +1,28 @@
+#about-bg {
+    /* background-color: #90A0D6; */
+    height: 40vh;
+    width: 92vw;
+    border: 2px #4C566A solid;
+    border-radius: 30px;
+}
+
+#about-content {
+    background-color: #4C566A;
+    height: 40vh;
+    width: 92vw;
+    border: 2px #4C566A solid;
+    border-radius: 30px;
+    margin: 4% 6%;
+}
+
+h1 {
+    padding-top: 2%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+p  {
+    padding: 1% 5%;
+    font-size: 18px;
+    color: #FFFFFF;
+}
