@@ -1,0 +1,12 @@
+footer.copy-right {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer.copy-right a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
