@@ -1,0 +1,32 @@
+.preloader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 1000;
+    background: #000;
+    animation: disappear 0.3s 2s linear forwards;
+}
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.preloader .UT {
+    color: black;
+    font-weight: bold;
+    font-size: 800%;
+    animation: blink 3.5s infinite ease;
+    /*font-style: italic;*/
+}
+
+@keyframes blink{
+    to{
+        text-shadow: 0 0 20px #0086FF, 0 0 30px #0086FF, 0 0 40px #0086FF;
+    }
+}

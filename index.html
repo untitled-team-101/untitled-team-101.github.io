@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./jumbotron.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animation.css"/>
+    <link rel="stylesheet" href="color.css"/>
+    <script src="animation.js" defer></script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="UT">UT</div>
+    </div>
     <div id="navbar">
         <div id="navbar-content">
             <div id="left-side">
@@ -44,7 +50,6 @@
         <div id="jumbotron-text">
             <h1>Welcome to Untitled Team</h1>
             <br>
-            <br>
             <p>Scroll Down to View More</p>
             <a href="#members" id="scroll">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -54,176 +59,34 @@
 
     <div class="grid" id="members">
         <div class="grid-title">Untitled Team Members</div>
-        <div class="grid-container">
+        <div class="grid-container" id="to-copy-paste">
             <div class="grid-item">
                 <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image"></div>
+                            <div class="details">
+                                <div class="name">Your Name</div>
+                                <div class="bio">This a short description about your self that you want to add in this page</div>
+                                <div class="social-links">
+                                    <a href="#"><div class="social github"></div></a>
+                                    <a href="#"><div class="social linkedin"></div></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="details">
-                        <div class="name">Your Name</div>
-                        <div class="bio">This a short description about your self that you want to add in this page</div>
-                        <div class="portfolio"><a href="#">Portfolio</a></div>
-                        <div class="social-links">
-                            <a href="#"><div class="social github"></div></a>
-                            <a href="#"><div class="social linkedin"></div></a>
+                        <div class="card-back">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            let toCP = document.getElementById("to-copy-paste")
+            let inner = toCP.innerHTML
+            for(let i = 0; i < 11; i++){
+                toCP.innerHTML += inner
+            }
+        </script>
     </div>
     <footer class="copy-right">
         <a href="https://github.com/untitled-team-101/untitled-portfolio/">&copy;Untitled Team</a>

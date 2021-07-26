@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;900&display=swap');
+
 body{
     background-color: #336b89;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*a {
     cursor: url('./images/cursor.svg'), pointer;
 }*/
+
+html {
+    scroll-padding-top: calc(2vw + 50px + 2px * 2 + 20px);
+}
 
 .grid .grid-title {
     text-align: center;
@@ -34,20 +40,42 @@ body{
 .card {
     box-sizing: border-box;
     width: 300px;
-    
+    backface-visibility: hidden;
 }
 
-.card:hover {
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.4);
-    transform: scale(1.01);
-    transition: all 0.2s;
+.card .card-inner {
+    transition: transform 1s;
+    position: relative;
+    height: 425px;
+    transform-style: preserve-3d;
+    /*background: red;*/
 }
 
-.image {
-    height: 240px;
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card .card-inner .card-front, .card .card-inner .card-back {
+    position: absolute;
+    height: 425px;
+    width: 300px;
+    /*transition: all 0.4s;*/
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    /*transform-style: preserve-3d;*/
+}
+
+.card .card-inner .card-back {
+    background: black;
+    width: 300px;
+    transform: rotateY(180deg);
+}
+
+.card .image {
+    height: 274px;
     background: url('images/member.jpg') no-repeat center rgba(255, 255, 255, 0.3);
     background-size: cover;
-    backdrop-filter: blur(2px);
+    background-position-y: 0;
 }
 
 .details {
